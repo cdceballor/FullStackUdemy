@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario con css</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../css/formulario2.css" media="screen" />
+  <title>Formulario con CSS</title>
 </head>
+
 <body>
-    <h1>Formulario con css</h1>
-    <div>
-        <form action="http://localhost:3000" method="POST"></form>
-        <label form="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre" placeholder="colocar" />
-    </div>
-    
+    <h1  id="title">Formulario estilizado con css</h1>
+  <div class="container">
+    <form action="http://localhost:3000" method="POST">
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" placeholder="pon tu nombre aquí" required />
+      <label for="nombre">Apellido</label>
+      <input type="text" name="apellido" id="apellido" placeholder="pon tu apellido aquí" required />
+      <label for="pais">País</label>
+      <select id="pais" name="pais" required>
+        <option selected disabled hidden>seleccione</option>
+        <option>Colombia</option>
+        <option>Venezuela</option>
+        <option>México</option>
+        <option>Perú</option>
+      </select>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
 </body>
 </html>
