@@ -10,13 +10,16 @@
 </head>
 
 <body>
-    <h1  id="title">Formulario estilizado con css</h1>
+    <h1  id="title">Regístrate</h1>
   <div class="container">
     <form action="http://localhost:3000" method="POST">
       <label for="nombre">Nombre</label>
       <input type="text" name="nombre" id="nombre" placeholder="pon tu nombre aquí" required />
-      <label for="nombre">Apellido</label>
       <input type="text" name="apellido" id="apellido" placeholder="pon tu apellido aquí" required />
+      <label for="correo">correo</label>
+      <input type="email" name="email" id="email" placeholder="pon tu correo aquí" required />
+      <label for="password">contraseña</label>
+      <input type="password" name="password" id="password" placeholder="pon tu contraseña aquí" required />
       <label for="pais">País</label>
       <select id="pais" name="pais" required>
         <option selected disabled hidden>seleccione</option>
